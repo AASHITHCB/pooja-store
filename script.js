@@ -1,7 +1,7 @@
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
     const products = [
        // { id: 1, name: 'Lord Ganesha Idol', price: 500, image: 'ganesha.jpg', category: 'idols' },
         //{ id: 2, name: 'Incense Sticks', price: 100, image: 'incense.jpg', category: 'incense' },
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <!-- Commented out Add to Cart functionality -->
                 <!--<button onclick="addToCart(${product.id})">Add to Cart</button>-->
                 <button>View Details</button>
-            </div>
+            </div>*/
         `).join('');
     }
 
