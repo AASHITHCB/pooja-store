@@ -3,9 +3,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const products = [
-        { id: 1, name: 'Lord Ganesha Idol', price: 500, image: 'ganesha.jpg', category: 'idols' },
-        { id: 2, name: 'Incense Sticks', price: 100, image: 'incense.jpg', category: 'incense' },
-        { id: 3, name: 'Brass Lamp', price: 800, image: 'lamp.jpg', category: 'lamps' },
+       // { id: 1, name: 'Lord Ganesha Idol', price: 500, image: 'ganesha.jpg', category: 'idols' },
+        //{ id: 2, name: 'Incense Sticks', price: 100, image: 'incense.jpg', category: 'incense' },
+        //{ id: 3, name: 'Brass Lamp', price: 800, image: 'lamp.jpg', category: 'lamps' },
         // Add more products here...
     ];
 
