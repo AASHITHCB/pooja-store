@@ -1,103 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sharada Pooja Store | Sacred Items for Divine Worship</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sharada Pooja Store</title>
+
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
+
 <body>
-    <header>
-        <div class="logo">🪔 Sharada Pooja Store</div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-               <!-- <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>-->
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home">
-        <h1>Welcome to Sharada Pooja Store</h1>
-        <p>Your one-stop shop for all Pooja essentials.</p>
-    </section>
+<header>
+  <div class="logo">🪔 Sharada Pooja Store</div>
+  <div class="hamburger" id="hamburger">☰</div>
 
-    <section id="products">
-        <h2>Our Products</h2>
-        <div class="filters">
-            <input type="text" id="search-input" placeholder="Search products...">
-            <select id="category-filter">
-                <option value="all">All Categories</option>
-                <option value="idols">Idols</option>
-                <option value="lamps">Lamps</option>
-                <option value="incense">Incense Sticks</option>
-                <option value="accessories">Accessories</option>
-            </select>
-        </div>
-        <!-- Added Banner for Special Products -->
-        <div class="banner">
-            <img src="/picture/WhatsApp%20Image%202025-02-17%20at%2018.54.56_8f7c1973.jpg" alt="Sharada Pooja Special Products">
-        </div>
-        <div class="product-grid" id="product-grid">
-            <!-- Dynamically generated products will appear here -->
-            <!-- New Product Card Added -->
-            <div class="product">
-             <!--   <img src="path/to/image1.jpg" alt="Special Pooja Essentials">
-                <div class="product-info">
-                    <h3>Special Pooja Essentials</h3>
-                    <p>We provide high-quality pooja items, including Kumkum, Ghee, Dhoop, Agarbatti and more.</p>
-                    <p><strong>Available Now!</strong></p> -->
-                </div>
-            </div>
-        </div>
-       <!-- <button id="load-more">Load More</button> -->
-    </section>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</header>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are dedicated to providing high-quality Pooja items at affordable prices.</p>
-    </section>
+<section id="home">
+  <h1>Pooja Items & Gramarajya Products</h1>
+  <p>All your pooja essentials in one place</p>
+  <a href="#products" class="btn">View Products</a>
+</section>
 
-    <section id="contact">
-        <h2>Get in Touch</h2>
-        <div class="contact-container">
-            <!-- Contact Form First on Mobile -->
-            <form id="contact-form" class="contact-form" action="https://formspree.io/f/xanqleql" method="POST">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="_replyto" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
+<section id="products">
+  <h2>Our Products</h2>
 
-            <!-- Contact Info & Map Below on Mobile -->
-            <div class="contact-info">
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Our Store</h4>
-                            <p>Opposite Shree Mahadevi Bajana Mandira,<br>Bajal Jalligudde, Mangaluru,<br>Karnataka 575007</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Call Us</h4>
-                            <p>+91 8866511135<br>
-                            <p>+91 9824370080<br>Mon-Sat: 9AM - 8PM</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
+  <div class="product-grid" id="product-grid"></div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>📍 Bajal, Mangaluru</p>
+  <p>📞 <a href="tel:+919824370080">Call Now</a></p>
+
+  <a href="https://wa.me/919824370080?text=Hello, I want to order"
+     class="whatsapp-btn">Order on WhatsApp</a>
+</section>
+
+<footer>
+  <p>© 2026 Sharada Pooja Store</p>
+</footer>
+
+<a href="https://wa.me/919824370080?text=Hello" class="whatsapp-float">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
                         <div>
                             <h4>Email Us</h4>
                             <p>sharadapoojastore@gmail.com</p>
