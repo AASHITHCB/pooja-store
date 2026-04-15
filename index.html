@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sharada Pooja Store</title>
 
-  <link rel="stylesheet" href="styles.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -25,22 +25,36 @@
 <section id="home">
   <h1>Pooja Items & Gramarajya Products</h1>
   <p>All your pooja essentials in one place</p>
-  <a href="#products" class="btn">View Products</a>
+  <a href="#products" class="btn">🛒 Shop Now</a>
 </section>
 
 <section id="products">
   <h2>Our Products</h2>
-
   <div class="product-grid" id="product-grid"></div>
 </section>
 
 <section id="contact">
   <h2>Contact Us</h2>
-  <p>📍 Bajal, Mangaluru</p>
+
+  <p>
+  📍 West Gate Centre, Kankanady, Pumpwell,<br>
+  Mangaluru, Karnataka 575002
+  </p>
+
+  <p><strong>Near Pumpwell Circle</strong></p>
+
   <p>📞 <a href="tel:+919824370080">Call Now</a></p>
 
-  <a href="https://wa.me/919824370080?text=Hello, I want to order"
-     class="whatsapp-btn">Order on WhatsApp</a>
+  <a href="https://wa.me/919824370080?text=Hello I want to buy pooja items"
+     class="btn">💬 WhatsApp Order</a>
+
+  <br><br>
+
+  <a href="https://maps.google.com/?q=West+Gate+Centre+Kankanady+Pumpwell+Mangaluru"
+     target="_blank"
+     class="btn">
+📍 Open in Google Maps
+</a>
 </section>
 
 <footer>
@@ -52,68 +66,5 @@
 </a>
 
 <script src="script.js"></script>
-</body>
-</html>
-                        <div>
-                            <h4>Email Us</h4>
-                            <p>sharadapoojastore@gmail.com</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Google Maps Embed -->
-                <div class="google-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.543779592797!2d74.84739437481388!3d12.90872798993059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a5e6b7b5c5f%3A0x9b0f9f5e4b3f2e1d!2sOpposite%20Shree%20Mahadevi%20Bajana%20Mandira%2C%20Bajal%20Jalligudde%2C%20Mangaluru%2C%20Karnataka%20575007!5e0!3m2!1sen!2sin!4v1690834872272!5m2!1sen!2sin"
-                        width="100%"
-                        height="300"
-                        style="border:0;"
-                        allowfullscreen=""
-                        loading="lazy">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-
-        <!-- WhatsApp Floating Button -->
-        <a href="https://wa.me/919824370080" class="whatsapp-float" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-    </section>
-
-    <!-- Uncommented Checkout Section -->
-    <section id="checkout">
-        <div id="checkout-form">
-            <button class="close-btn" onclick="hideCheckoutForm()">&times;</button>
-            <h2>Complete Your Purchase 🪔</h2>
-            <form id="checkout-form">
-                <div class="form-group">
-                    <label>Full Name</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div class="form-group">
-                    <label>Email Address</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label>Phone Number</label>
-                    <input type="tel" id="phone" pattern="[0-9]{10}" required>
-                </div>
-                <div class="form-group">
-                    <label>Delivery Address</label>
-                    <textarea id="address" required></textarea>
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="submit-btn">Place Order (₹<span id="order-total">0</span>)</button>
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Sharada Pooja Store. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
