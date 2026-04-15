@@ -7,6 +7,9 @@
 body {
   font-family: Arial;
   background: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header */
@@ -19,7 +22,7 @@ header {
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .nav-links {
@@ -33,7 +36,7 @@ header {
   text-decoration: none;
 }
 
-/* Mobile menu */
+/* Mobile */
 .hamburger {
   display: none;
   cursor: pointer;
@@ -42,10 +45,19 @@ header {
 /* Hero */
 #home {
   text-align: center;
-  padding: 60px 20px;
+  padding: 40px 15px;
   background: #eee;
 }
 
+#home h1 {
+  font-size: 26px;
+}
+
+#home p {
+  font-size: 14px;
+}
+
+/* Button */
 .btn {
   background: #25D366;
   color: white;
@@ -53,14 +65,15 @@ header {
   text-decoration: none;
   display: inline-block;
   margin-top: 10px;
+  border-radius: 5px;
 }
 
 /* Products */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+  gap: 15px;
+  padding: 15px;
 }
 
 .product-card {
@@ -72,7 +85,7 @@ header {
 
 .product-card img {
   width: 100%;
-  height: 150px;
+  height: 140px;
   object-fit: cover;
 }
 
@@ -88,6 +101,7 @@ header {
   text-decoration: none;
   display: inline-block;
   margin-top: 5px;
+  border-radius: 5px;
 }
 
 /* Contact */
@@ -96,9 +110,46 @@ header {
   padding: 20px;
 }
 
+/* Footer fix */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+}
+
 /* WhatsApp Float */
 .whatsapp-float {
   position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+/* Mobile menu */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #7B1E2D;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}  position: fixed;
   bottom: 20px;
   right: 20px;
   background: #25D366;
@@ -177,231 +228,155 @@ header {
 
 footer {
     background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
- #contact {
-            background: #fff8f0;
-            
-            padding: 20px;
-            text-align: center;
-        }
-
- .contact-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns for larger screens */
-    gap: 20px; /* Space between map and form */
-    margin-top: 20px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.contact-form {
-    background: white;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+body {
+  font-family: Arial;
+  background: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-
-        .contact-info {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-       .contact-details {
-    margin-top: 2rem;
-    text-align: center;
+/* Header */
+header {
+  background: #7B1E2D;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
 }
 
-.contact-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    border-radius: 8px;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+.logo {
+  font-size: 18px;
 }
 
-.contact-item i {
-    font-size: 1.5rem;
-    color: #ff9933;
-    min-width: 24px;
-    margin-top: 4px;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
 }
 
-.contact-item div {
-    flex: 1;
+.nav-links a {
+  color: white;
+  text-decoration: none;
 }
 
-.contact-item h4 {
-    margin: 0 0 0.5rem 0;
-    color: #333;
-    font-size: 2.1rem;
+/* Mobile */
+.hamburger {
+  display: none;
+  cursor: pointer;
 }
 
-.contact-item p {
-    margin: 0;
-    color: #666;
-    line-height: 1.9;
+/* Hero */
+#home {
+  text-align: center;
+  padding: 40px 15px;
+  background: #eee;
 }
 
-        .whatsapp-float {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            background: #25D366;
-            color: white;
-            padding: 1rem;
-            border-radius: 50%;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-            z-index: 1000;
-        }
-
-        /* Enhanced Checkout Form */
-       /* #checkout {
-            background: rgba(0,0,0,0.5);
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            display: none;
-            justify-content: center;
-            align-items: center;
-            animation: fadeIn 0.3s ease;
-        }*/
-
-        #checkout-form {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            width: 90%;
-            max-width: 500px;
-            position: relative;
-            transform: translateY(-20px);
-            animation: slideUp 0.3s ease;
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: #4a2c0a;
-        }
-.banner {
-    text-align: center; /* Center the image horizontally */
-    margin: 20px 0; /* Add spacing above and below the banner */
+#home h1 {
+  font-size: 26px;
 }
 
-.banner img {
-    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better aesthetics */
+#home p {
+  font-size: 14px;
 }
 
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.8rem;
-            border: 2px solid #eee;
-            border-radius: 8px;
-            transition: border-color 0.3s ease;
-        }
+/* Button */
+.btn {
+  background: #25D366;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 5px;
+}
 
-        .form-group input:focus,
-        .form-group textarea:focus {
-            border-color: #ff9933;
-            outline: none;
-        }
+/* Products */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+  gap: 15px;
+  padding: 15px;
+}
 
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
+.product-card {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
 
-        @keyframes slideUp {
-            from { transform: translateY(20px); }
-            to { transform: translateY(0); }
-        }
+.product-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
 
+.price {
+  color: #7B1E2D;
+  font-weight: bold;
+}
 
-       /* Hide the navigation menu on mobile */
+.card-btn {
+  background: #25D366;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Footer fix */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+}
+
+/* WhatsApp Float */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+/* Mobile menu */
 @media (max-width: 768px) {
-    header .nav-links {
-        display: none; /* Hide the menu */
-    }
- .contact-container {
-        grid-template-columns: 1fr; /* Single column layout for mobile */
-    }
-
-    .contact-form {
-        order: 1; /* Place the contact form first */
-    }
- .banner img {
-        width: 90%; /* Reduce image width for mobile devices */
-        margin: 0 auto; /* Center the image */
-    }
-
-    .contact-info {
-        order: 2; /* Place the contact info (including the map) second */
-    }
-
-    .google-map iframe {
-        height: 200px; /* Reduce height for mobile */
-    }
-        }
-#get-in-touch {
-    padding: 20px;
-    text-align: center;
-}
-
-
-
-.map iframe {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #7B1E2D;
+    position: absolute;
+    top: 50px;
+    right: 0;
     width: 100%;
-    height: 300px;
-    border: none;
-    border-radius: 8px;
-}
+  }
 
-.contact-form {
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+  .nav-links.show {
+    display: flex;
+  }
 
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-
-.contact-form button {
-    background-color: #ffcc00;
-    color: #333;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-}
-#cart, #checkout {
-    display: none !important;
+  .hamburger {
+    display: block;
+  }
 }
